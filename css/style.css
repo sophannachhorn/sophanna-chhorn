@@ -14,29 +14,32 @@ body{
 }
 ul li{
     padding: 15px;
-    background: rgb(192, 188, 188);
-    box-shadow: -1px 5px 5px rgba(0,0,0,0.5);
+    background: rgb(146, 140, 140);
+    
 }
 ul li a{
     text-transform: uppercase;
     text-decoration: none;
-    color:white;   
+    color:black;   
 }
 nav ul{
    
     position:fixed;
     right: 0;
 }
-nav li:hover{
-    cursor: pointer;
-    background:skyblue;   
-}
+
 nav{
-    width: 100%;
-    background: url('https://s30876.pcdn.co/wp-content/uploads/Writing-A-CV-scaled.jpg');
+    background-attachment: fixed; 
     background-size: cover;
-    background-position: center ;
-    height: 60vh; 
+    background-position: top;
+    background-image: url(https://s30876.pcdn.co/wp-content/uploads/Writing-A-CV-scaled.jpg);
+    width: 100%;
+    height: 70vh;
+
+
+}
+.paragraph{
+    font-size: 20px;
 }
 .aboutCV{
     display: none;
@@ -82,12 +85,35 @@ nav li:hover .aboutCV ul li {
     color:rgb(29, 96, 141);
     font-size: 35px;
 }
+.download{
+    width: 180px;
+    height: 50px;
+    background: rgb(40, 137, 228);
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.download a{
+    text-decoration: none;
+    color: white;
+}
+.download i{
+    font-size: 20px;
+}
 .aboutme{
     display: flex;
-    background: rgba(0,0,0,0.1);
+    color: #0e49b5;
+    background: #e8e8e8;
     padding: 10px;
     margin-top: 100px;
     height: 80vh;
+}
+#aboutme h2{
+    color: #0e49b5;
 }
 .text1{
     padding: 50px;
@@ -99,11 +125,7 @@ nav li:hover .aboutCV ul li {
     border-radius: 20px;
     background: rgba(0,0,0,0.2);  
 }
-.text1:hover{
-    box-shadow: -5px 3px 5px 2px rgba(0,0,0,0.6);
-    cursor: pointer;
-    transition: linear 0.7s;
-}
+
 .img2{
     width: 340px;
     height: 370px;
@@ -111,12 +133,13 @@ nav li:hover .aboutCV ul li {
     margin-top: 45px;
     border-radius: 10px;
 }
-#h1,#skill{
+.h1,#skill{
     padding: 10px;
     margin-top: 150px;
     margin-bottom: 40px;
     text-align: center;
-    background: rgba(0,0,0,0.2);  
+    background: #e8e8e8; 
+    color: #0e49b5; 
 
 }
 .cv{
@@ -125,7 +148,7 @@ nav li:hover .aboutCV ul li {
 
 }
 .box{
-    background: rgba(0,0,0,0.2); ;
+    background: #e8e8e8; 
     width: 330px;
     height: 130px;
     border-radius: 30px;
@@ -207,7 +230,7 @@ nav li:hover .aboutCV ul li {
 .skills{
     width: 100%;
     display: flex;
-    background: rgba(37, 35, 35, 0.226);
+    background: #e8e8e8;
     height: 500px;
     justify-content: space-around;
 }
@@ -225,4 +248,60 @@ nav li:hover .aboutCV ul li {
 }
 .box-2 p{
     margin-left: 20px;
+}
+.contact{
+    background: #968c83;
+    width: 100%;
+    height: 520px;
+    margin-top: 60px;
+    padding-top: 50px;
+}
+.con{
+    background: #968c83;
+    color: #0e49b5;
+    margin-top: 80px;
+    text-align: center;
+}
+.form-controller{
+    display: flex;
+    justify-content: space-around;
+}
+iframe{
+    width: 45%;
+    height: 350px;
+}
+.box-left{
+    width: 45%;
+}
+input {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+input[type="button"] {
+    width: 150px;
+    cursor: pointer;
+}
+footer{
+    height: 200px;
+    background: #555555;
+    border-top: 1px solid rgb(230, 227, 224);
+}
+@media(max-width: 768px) {
+    .Menu,
+    .profile,
+    .info,
+    .icon,
+    .download,
+    .aboutme,
+    .img2,
+    .h1,
+    .cv,
+    .left,
+    .center,
+    {
+
+    grid-column: 1/3;
+    }
 }

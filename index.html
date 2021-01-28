@@ -11,20 +11,12 @@
 
 </head>
 <body>
-    <nav>
+    <nav class="Menu">
         <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">about me</a></li>
-                <li><a href="">My CV</a></li>
-                    <div class="aboutCV">
-                        <ul>
-                            <li><a href="">Experience</a></li>
-                            <li><a href="">Education</a></li>
-                            <li><a href="">Skill</a></li>
-
-                        </ul>
-                    </div>
-                <li><a href="">contact</a></li>
+                <li class="hvr-shutter-in-horizontal"><a href="">home</a></li>
+                <li class="hvr-shutter-in-horizontal"><a href="#aboutme">about me</a></li>
+                <li class="hvr-shutter-in-horizontal"><a href="#CV">My CV</a></li>
+                <li class="hvr-shutter-in-horizontal"><a href="#Contact">contact</a></li>
         </ul>
     </nav>
     <div class="profile">
@@ -36,25 +28,31 @@
             <h3>Email:sophanna.chhorn@student.passerellesnumeriques.org </h3>
             <h3>Tel : 090 94 84 51</h3>
             <div class="icon">
-                <a href="https://www.facebook.com/profile.php?id=100016537449757"><i class="fa fa-facebook-square"></i></a>
-                <a href="https://telegram.org/"><i class="fa fa-telegram"></i></a>
-                <a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
-                <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.skype.com/en/"><i class="fa fa-skype"></i></a>
+                <a class="hvr-grow" href="https://www.facebook.com/profile.php?id=100016537449757"><i class="fa fa-facebook-square"></i></a>
+                <a class="hvr-grow" href="https://telegram.org/"><i class="fa fa-telegram"></i></a>
+                <a class="hvr-grow" href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
+                <a class="hvr-grow" href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i></a>
+                <a class="hvr-grow" href="https://www.skype.com/en/"><i class="fa fa-skype"></i></a>
+            </div>
+            <div class="hvr-grow download">
+                <h4><a href="https://drive.google.com/file/d/17G_iNn1p3XwSuEpS_tqtE7No8uCo3kHU/view?usp=PDF"><i class="fa fa-arrow-circle-o-down"></i>  Download CV</a></h4>
             </div>
         </div>
     </div>
-    <div class="aboutme">
-            <div class="text1">
-                <h2>About Me</h2>
-                I'm a paragraph. Click here to add your own text and edit me. 
-                It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. 
-                Feel free to drag and drop me anywhere you like on your page. 
-                I’m a great place for you to tell a story and let your users know a little more about you
+    <div class="aboutme" id="aboutme">
+            <div class="hvr-shutter-in-vertical text1">
+                <h2>ABOUT ME</h2>
+               <div class="paragraph">
+                    <p>I'm sophanna CHHORN</p>
+                    <p>Sex: Female</p>
+                    <p>Nationality: Khmer</p>
+                    <p>Date of birth: 09 March 2000</p>
+                    <p>Place of date: Kandal province</p>
+               </div>
             </div>
             <img src="../images/sophanna.png" alt="profile" class="img2">
     </div>
-    <h1 id="h1">MY CV</h1>
+    <h1 class="h1" id="CV">MY CV</h1>
     <div class="cv">
         <div class="left">
             <div class="box">
@@ -64,22 +62,22 @@
                 
             </div>
             <div class="box">
-                
+
             </div>
         </div>
-        <div class="center">
-            <div class="circle"></div>
-            <div class="circle">
+        <div class="center ">
+            <div class="circle  hvr-grow"></div>
+            <div class="circle  hvr-grow">
                 <h2>2020-Present</h2>
             </div>
-            <div class="circle">
+            <div class="circle  hvr-grow">
                 <h2>2020-Present</h2>
             </div>
-            <div class="circle"></div>
-            <div class="circle">
+            <div class="circle  hvr-grow"></div>
+            <div class="circle  hvr-grow">
                 <h2>2020-Present</h2>
             </div>
-            <div class="circle">
+            <div class="circle  hvr-grow">
                 <h2>2020-Present</h2>
             </div>
         </div>
@@ -146,8 +144,26 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+    <h1 id="Contact" class="con">CONTACT ME</h1>
+    <div class="contact">
+        <div class="form-controller">
+            <form class="box-left">
+                <label>Username :</label>
+                <input type="text" placeholder="Your name">
+                <br>
+                <label>Email :</label>
+                <input type="email" placeholder="Your email">
+                <br>
+                <label>Password :</label>
+                <input type="password" placeholder="Your password">
+                <br>
+                <input type="button" value="Send Email">
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.013908283856!2d104.8808949142562!3d11.550859791798853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951add5e2cd81%3A0x171e0b69c7c6f7ba!2sPasserelles%20Num%C3%A9riques%20Cambodia%20(PNC)!5e0!3m2!1sen!2skh!4v1583125279177!5m2!1sen!2skh" frameborder="0" style="border:0;" allowfullscreen=""></iframe>   
+        </div>
+    </div>
+    <footer></footer>
 </body>
 </html>
